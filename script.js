@@ -1,8 +1,7 @@
-// Theme toggle
+
 const toggle = document.getElementById('theme-toggle');
 const body = document.body;
 
-// Check localStorage on load
 if (localStorage.getItem('theme') === 'light') {
   body.classList.add('light-mode');
 }
