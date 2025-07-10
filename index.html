@@ -1,82 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Riddhi Trevadiya | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <button id="theme-toggle">Toggle Theme</button>
+  <div id="intro" class="intro-screen">
+    <h1 class="intro-text">RIDDHI TREVADIYA</h1>
+    <button id="enter-btn">Enter Portfolio</button>
+    <audio id="intro-sound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_aab48a2640.mp3?filename=cinematic-intro-117190.mp3"></audio>
+  </div>
 
-  <header class="hero" data-aos="fade-in">
-    <h1>Riddhi Trevadiya</h1>
-    <p>Software Developer | JavaScript & React Enthusiast</p>
-    <a href="#projects" class="btn">View My Work</a>
-  </header>
+  <div id="main-content" style="display: none;">
+    <button id="theme-toggle">Toggle Theme</button>
 
-  <section id="about" data-aos="fade-up">
-    <h2>About Me</h2>
-    <p>
-      Passionate software developer with experience in React, Java, Node.js, and design.
-      Dedicated to learning, solving problems, and building engaging web experiences.
-    </p>
-  </section>
+    <header class="hero" data-aos="fade-in">
+      <h1>Hi, I'm Riddhi Trevadiya</h1>
+      <p>
+        A passionate software developer who blends creativity with code. <br>
+        I specialize in building responsive web applications, solving complex problems, and crafting seamless user experiences.<br>
+        From backend logic to polished frontend design — I enjoy making ideas come alive on the web.
+      </p>
+      <a href="#projects" class="btn">View My Work</a>
+    </header>
 
-  <section id="projects" data-aos="fade-up">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Crafted Connection (E-commerce)</h3>
-      <p>Node.js, Express, SQLite, Sequelize, Vanilla JS</p>
-      <a href="https://github.com/Riddhi-trevadiya/Crafted-connection">GitHub</a>
-    </div>
-    <div class="project">
-      <h3>Word Imposter Game</h3>
-      <p>Multiplayer game using Node.js, WebSockets, Express</p>
-      <a href="https://github.com/Riddhi-trevadiya/imposter">GitHub</a>
-    </div>
-    <div class="project">
-      <h3>React Counter App</h3>
-      <p>Functional components, hooks, reusability</p>
-    </div>
-  </section>
+    <section id="projects" data-aos="fade-up">
+      <h2>My Projects</h2>
+      <div class="scroll-row">
+        <div class="project-card">
+          <h3>📸 NASA APOD - Space Image Viewer</h3>
+          <p>React app using NASA's APOD API. Displays daily space images with details and date selection.</p>
+          <a href="https://github.com/Riddhi-trevadiya/nasa-apod" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>Crafted Connection</h3>
+          <p>E-commerce platform built with Node.js, Express, SQLite & Sequelize.</p>
+          <a href="https://github.com/Riddhi-trevadiya/Crafted-connection">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Word Imposter Game</h3>
+          <p>Multiplayer guessing game using WebSockets and Express.</p>
+          <a href="https://github.com/Riddhi-trevadiya/imposter">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>React Counter App</h3>
+          <p>Simple counter built with React hooks and components.</p>
+        </div>
+      </div>
+    </section>
 
-  <section id="skills" data-aos="fade-up">
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>JavaScript</span>
-      <span>React</span>
-      <span>Java</span>
-      <span>Node.js</span>
-      <span>MySQL</span>
-      <span>Git</span>
-      <span>HTML/CSS</span>
-      <span>Figma</span>
-    </div>
-  </section>
+    <section id="skills" data-aos="fade-up">
+      <h2>Technologies I Use</h2>
+      <div class="scroll-row skills-carousel">
+        <div class="skill-pill">JavaScript</div>
+        <div class="skill-pill">React</div>
+        <div class="skill-pill">Java</div>
+        <div class="skill-pill">Node.js</div>
+        <div class="skill-pill">Express.js</div>
+        <div class="skill-pill">MySQL</div>
+        <div class="skill-pill">SQLite</div>
+        <div class="skill-pill">Git</div>
+        <div class="skill-pill">HTML/CSS</div>
+        <div class="skill-pill">Figma</div>
+        <div class="skill-pill">WebSockets</div>
+        <div class="skill-pill">API Integration</div>
+      </div>
+    </section>
 
-  <section id="resume" data-aos="fade-up">
-    <h2>Highlights</h2>
-    <ul>
-      <li>50+ coding problems solved on LeetCode, GFG,Hackerrank</li>
-      <li>Competitive Programming Camp (2024)</li>
-      <li>Design Lead @ Prakarsh 2025</li>
-    </ul>
-  </section>
+    <section id="contact" data-aos="fade-up">
+      <h2>Contact</h2>
+      <p>Email: 22it8@svitvasad.ac.in</p>
+      <div class="social">
+        <a href="https://github.com/Riddhi-trevadiya">GitHub</a>
+        <a href="https://linkedin.com/in/riddhi-trevadiya">LinkedIn</a>
+      </div>
+    </section>
 
-  <section id="contact" data-aos="fade-up">
-    <h2>Contact</h2>
-    <p>Email: 22it8@svitvasad.ac.in</p>
-    <div class="social">
-      <a href="https://github.com/Riddhi-trevadiya">GitHub</a>
-      <a href="https://linkedin.com/in/riddhi-trevadiya">LinkedIn</a>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Riddhi Trevadiya</p>
-  </footer>
+    <footer>
+      <p>© 2025 Riddhi Trevadiya</p>
+    </footer>
+  </div>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
