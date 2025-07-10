@@ -10,5 +10,5 @@ window.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     intro.style.display = 'none';
     main.style.display = 'block';
-  }, 2500);
+  }, 250);
 });
