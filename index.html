@@ -1,93 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Riddhi Trevadiya | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
-    <div class="content">
-      <h1>Riddhi Trevadiya</h1>
-      <p>Software Developer | JavaScript & React Enthusiast</p>
-      <a href="#projects" class="btn">View My Work</a>
-    </div>
+  <button id="theme-toggle">Toggle Theme</button>
+
+  <header class="hero" data-aos="fade-in">
+    <h1>Riddhi Trevadiya</h1>
+    <p>Software Developer | JavaScript & React Enthusiast</p>
+    <a href="#projects" class="btn">View My Work</a>
   </header>
 
-  <section id="about">
+  <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
     <p>
-      I'm a passionate software developer who enjoys building creative and user-centric web applications.
-      I love working with React, Java, and backend APIs, and am constantly learning new technologies to build better systems.
+      Passionate software developer with experience in React, Java, Node.js, and design.
+      Dedicated to learning, solving problems, and building engaging web experiences.
     </p>
   </section>
 
-  <section id="projects">
+  <section id="projects" data-aos="fade-up">
     <h2>Projects</h2>
     <div class="project">
-      <h3>🛋 Crafted Connection — Home Decor E-commerce</h3>
-      <p>
-        Built a full-stack e-commerce app with Node.js, Express, SQLite, Sequelize, and Vanilla JS.<br>
-        Features include secure authentication, product filtering, cart, and order management.
-      </p>
-      <a href="https://github.com/Riddhi-trevadiya/Crafted-connection" target="_blank">View on GitHub</a>
+      <h3>Crafted Connection (E-commerce)</h3>
+      <p>Node.js, Express, SQLite, Sequelize, Vanilla JS</p>
+      <a href="https://github.com/Riddhi-trevadiya/Crafted-connection">GitHub</a>
     </div>
-
     <div class="project">
-      <h3>🎮 Word Imposter Game</h3>
-      <p>
-        Real-time multiplayer word game built using Node.js, Express, and WebSockets.<br>
-        Players join rooms, get words, and identify the imposter.
-      </p>
-      <a href="https://github.com/Riddhi-trevadiya/imposter" target="_blank">View on GitHub</a>
+      <h3>Word Imposter Game</h3>
+      <p>Multiplayer game using Node.js, WebSockets, Express</p>
+      <a href="https://github.com/Riddhi-trevadiya/imposter">GitHub</a>
     </div>
-
     <div class="project">
-      <h3>🔢 React Counter App</h3>
-      <p>
-        A simple counter app built with React using functional components and hooks.<br>
-        Demonstrates state management and props.
-      </p>
+      <h3>React Counter App</h3>
+      <p>Functional components, hooks, reusability</p>
     </div>
   </section>
 
-  <section id="skills">
+  <section id="skills" data-aos="fade-up">
     <h2>Skills</h2>
-    <div class="skill-grid">
-      <div>JavaScript</div>
-      <div>React</div>
-      <div>Java</div>
-      <div>Node.js</div>
-      <div>Express.js</div>
-      <div>MySQL / SQLite</div>
-      <div>Git & GitHub</div>
-      <div>HTML/CSS</div>
-      <div>Figma</div>
-      <div>Data Structures</div>
+    <div class="skills">
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>Java</span>
+      <span>Node.js</span>
+      <span>MySQL</span>
+      <span>Git</span>
+      <span>HTML/CSS</span>
+      <span>Figma</span>
     </div>
   </section>
 
-  <section id="resume">
+  <section id="resume" data-aos="fade-up">
     <h2>Highlights</h2>
     <ul>
-      <li>Solved 50+ problems on LeetCode and GFG</li>
-      <li>Competitive Programming Summer Camp (2024)</li>
-      <li>Design Lead @ Prakarsh 2025 (SVIT)</li>
+      <li>50+ coding problems solved on LeetCode, GFG</li>
+      <li>Competitive Programming Camp (2024)</li>
+      <li>Design Lead @ Prakarsh 2025</li>
     </ul>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>📧 22it8@svitvasad.ac.in</p>
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Email: 22it8@svitvasad.ac.in</p>
     <div class="social">
-      <a href="https://github.com/Riddhi-trevadiya" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/riddhi-trevadiya/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Riddhi-trevadiya">GitHub</a>
+      <a href="https://linkedin.com/in/riddhi-trevadiya">LinkedIn</a>
     </div>
   </section>
 
   <footer>
     <p>© 2025 Riddhi Trevadiya</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
