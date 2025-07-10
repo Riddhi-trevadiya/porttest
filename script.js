@@ -1,12 +1,9 @@
-const intro = document.getElementById('intro');
-const main = document.getElementById('main-content');
-const sound = document.getElementById('intro-sound');
-
-// Auto play intro and then load main content
 window.addEventListener('DOMContentLoaded', () => {
-  sound.play();
+  const intro = document.getElementById('intro');
+  const main = document.getElementById('main-content');
+  const audio = document.getElementById('intro-sound');
 
-  // Wait 2.5 seconds before switching to main
+  audio.play().catch(() => {});
   setTimeout(() => {
     intro.style.display = 'none';
     main.style.display = 'block';
