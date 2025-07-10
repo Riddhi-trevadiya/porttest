@@ -3,17 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Riddhi Trevadiya | Portfolio</title>
+  <title>Riddhi Trevadiya – Portfolio</title>
   <link rel="stylesheet" href="style.css"/>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <div id="intro" class="intro-screen">
     <h1 class="intro-text">RIDDHI TREVADIYA</h1>
-    <audio id="intro-sound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_aab48a2640.mp3?filename=cinematic-intro-117190.mp3" autoplay></audio>
+    <audio id="intro-sound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_aab48a2640.mp3?filename=cinematic-intro-117190.mp3"></audio>
   </div>
 
-  <div id="main-content" style="display: none;">
+  <div id="main-content">
     <nav class="navbar">
       <a href="#hero">Home</a>
       <a href="#projects">Projects</a>
@@ -22,48 +21,80 @@
     </nav>
 
     <div class="horizontal-container">
-      <section class="section hero" id="hero">
+      <section id="hero" class="section hero">
         <h1>Hi, I'm Riddhi Trevadiya</h1>
-        <p>A passionate developer crafting modern web experiences.</p>
+        <p>
+          I'm a full-stack web developer passionate about building beautiful and functional websites.
+          I focus on delivering responsive UI/UX experiences using modern frameworks and technologies.
+          From designing in Figma to building with React and deploying with Node.js — I love the entire process.
+        </p>
       </section>
 
-      <section class="section projects" id="projects">
-        <h2>Projects</h2>
-        <div class="scroll-row">
-          <div class="project-card">NASA APOD Viewer</div>
-          <div class="project-card">Crafted Connection</div>
-          <div class="project-card">Word Imposter Game</div>
-          <div class="project-card">React Counter App</div>
+      <section id="projects" class="section projects">
+        <h2>Featured Projects</h2>
+        <div class="carousel">
+          <div class="project-card">
+            <h3>NASA APOD Viewer</h3>
+            <p>
+              A React-based space image explorer that pulls data from NASA's Astronomy Picture of the Day API.
+              Features daily content with image/video, date picker, and loading animation.
+            </p>
+            <a href="https://github.com/Riddhi-trevadiya/nasa-apod" target="_blank">View on GitHub</a>
+          </div>
+          <div class="project-card">
+            <h3>Crafted Connection</h3>
+            <p>
+              An e-commerce platform promoting handcrafted furniture made by local artisans.
+              Built with Node.js, Express, Sequelize (SQLite) with cart, checkout, and admin panel modules.
+            </p>
+            <a href="https://github.com/Riddhi-trevadiya/Crafted-connection" target="_blank">View on GitHub</a>
+          </div>
+          <div class="project-card">
+            <h3>Word Imposter Game</h3>
+            <p>
+              A multiplayer room-based game where players identify an imposter based on assigned words.
+              Developed using Express, WebSocket and custom frontend game logic with real-time chat.
+            </p>
+            <a href="https://github.com/Riddhi-trevadiya/imposter" target="_blank">View on GitHub</a>
+          </div>
+          <div class="project-card">
+            <h3>React Counter App</h3>
+            <p>
+              A simple counter app made in React demonstrating component reuse and state management via hooks.
+              Lightweight and beginner-friendly project showcasing clean UI.
+            </p>
+          </div>
         </div>
       </section>
 
-      <section class="section skills" id="skills">
-        <h2>Skills</h2>
-        <div class="scroll-row">
-          <div class="skill-pill">JavaScript</div>
-          <div class="skill-pill">React</div>
+      <section id="skills" class="section skills">
+        <h2>Tech Stack</h2>
+        <div class="carousel">
+          <div class="skill-pill">JavaScript (ES6+)</div>
+          <div class="skill-pill">React.js</div>
           <div class="skill-pill">Node.js</div>
+          <div class="skill-pill">Express.js</div>
+          <div class="skill-pill">SQLite & MySQL</div>
           <div class="skill-pill">Java</div>
-          <div class="skill-pill">HTML/CSS</div>
-          <div class="skill-pill">Git</div>
-          <div class="skill-pill">Figma</div>
-          <div class="skill-pill">SQLite</div>
+          <div class="skill-pill">HTML5 & CSS3</div>
+          <div class="skill-pill">Git & GitHub</div>
+          <div class="skill-pill">WebSockets</div>
+          <div class="skill-pill">Figma & UI Design</div>
         </div>
       </section>
 
-      <section class="section contact" id="contact">
-        <h2>Contact</h2>
-        <p>Email: 22it8@svitvasad.ac.in</p>
+      <section id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <p>If you're interested in collaborating or have an opportunity, feel free to reach out to me:</p>
+        <p>Email: <a href="mailto:22it8@svitvasad.ac.in">22it8@svitvasad.ac.in</a></p>
         <div class="social">
-          <a href="https://github.com/Riddhi-trevadiya">GitHub</a>
-          <a href="https://linkedin.com/in/riddhi-trevadiya">LinkedIn</a>
+          <a href="https://github.com/Riddhi-trevadiya" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/riddhi-trevadiya" target="_blank">LinkedIn</a>
         </div>
       </section>
     </div>
   </div>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
-  <script>AOS.init();</script>
 </body>
 </html>
